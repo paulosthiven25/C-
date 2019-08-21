@@ -1,0 +1,28 @@
+﻿@model IList<Usuario>
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<h1>Listando usuários</h1>
+
+
+<a asp-controller="Usuario" asp-action="Cadastrar">Cadastrar</a>
+
+<div>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>DT Nascimento</th>
+        </tr>
+        @foreach (var v in Model)
+        {
+    <tr>
+        <td>@v.Nome</td>
+        <td>@v.Email</td>
+        <td>@v.DataNascimento.ToString("dd/MM/yyyy")</td>
+    </tr>
+        }
+    </table>
+</div>
+

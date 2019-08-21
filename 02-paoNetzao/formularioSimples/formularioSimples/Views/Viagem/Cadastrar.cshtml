@@ -1,0 +1,46 @@
+﻿
+@model Viagem
+
+
+<h1>Cadastrar</h1>
+
+
+<form asp-controller="viagem" asp-action="cadastrar">
+
+    <div class="form-group">
+        <label asp-for="Destino"></label>
+        <input asp-for="Destino" class="form-control" />
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Internacional"></label>
+        <input asp-for="Internacional" />
+    </div>
+
+    <div class="form-group">
+
+        <label asp-for="DataSaida"></label>
+        <input asp-for="DataSaida" class="form-control" />
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Valor"></label>
+        <input asp-for="Valor" class="form-control" />
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TipoViagem"></label>
+        <select asp-for="TipoViagem" class="form-control" asp-items="@Html.GetEnumSelectList<TipoViagem>()">
+            <option>Selecione</option>
+        </select>
+
+
+    </div>
+
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+
+</form>
+

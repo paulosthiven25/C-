@@ -1,0 +1,33 @@
+﻿@model IList<Viagem>
+
+
+@if (TempData["msg"] != null) { 
+<div class="alert alert-success">
+    <p>@TempData["msg"]</p>
+</div>
+    }
+
+<h1>Listar viagens</h1>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Destino</th>
+        <th>Valor</th>
+        <th>Data Saída</th>
+        <th>Internacional</th>
+        <th>Tipo</th>
+    </tr>
+
+    @foreach (var p in Model)
+    {
+        <tr>
+            <td>@p.Destino</td>
+            <td>@p.Valor</td>
+            <td>@p.DataSaida.ToShortDateString()</td>
+            <td>@(p.Internacional ? "Sim" : "Não")</td>
+            <td>@p.TipoViagem</td>
+        </tr>
+    }
+
+</table>
+

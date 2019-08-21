@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "formularioSimples", "formularioSimples\formularioSimples.csproj", "{CDCB63E6-42CF-4236-B60E-6C45A358C1EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDCB63E6-42CF-4236-B60E-6C45A358C1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDCB63E6-42CF-4236-B60E-6C45A358C1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDCB63E6-42CF-4236-B60E-6C45A358C1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDCB63E6-42CF-4236-B60E-6C45A358C1EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB609428-7592-4A2E-8DD9-70512204C899}
+	EndGlobalSection
+EndGlobal
