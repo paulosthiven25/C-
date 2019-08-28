@@ -1,0 +1,28 @@
+﻿@model IList<Veiculo>
+
+<mensagem msg="@TempData["msg"]"></mensagem>
+
+<h1>Listar</h1>
+
+<a asp-controller="Veiculo" asp-action="Cadastrar" class="btn btn-info">Cadastrar</a>
+
+<div>
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Peso</th>
+            <th>Modelo</th>
+            <th>DT Fabricacao</th>
+            <th>Combustível</th>
+        </tr>
+        @foreach (var v in Model)
+        {
+            <tr>
+                <td>@v.Peso</td>
+                <td>@v.Modelo</td>
+                <td>@v.DataFabricacao.ToString("dd/MM/yyyy")</td>
+                <td>@v.TipoCombustivel</td>
+            </tr>
+        }
+    </table>
+</div>
+
