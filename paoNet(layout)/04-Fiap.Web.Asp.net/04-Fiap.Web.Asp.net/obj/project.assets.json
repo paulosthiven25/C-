@@ -12940,11 +12940,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\logonrmlocal\\Desktop\\paoNet(layout)\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net.csproj",
+      "projectUniqueName": "C:\\Users\\logonrmlocal\\Desktop\\C-\\paoNet(layout)\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net.csproj",
       "projectName": "04-Fiap.Web.Asp.net",
-      "projectPath": "C:\\Users\\logonrmlocal\\Desktop\\paoNet(layout)\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net.csproj",
+      "projectPath": "C:\\Users\\logonrmlocal\\Desktop\\C-\\paoNet(layout)\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net.csproj",
       "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\logonrmlocal\\Desktop\\paoNet(layout)\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net\\obj\\",
+      "outputPath": "C:\\Users\\logonrmlocal\\Desktop\\C-\\paoNet(layout)\\04-Fiap.Web.Asp.net\\04-Fiap.Web.Asp.net\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

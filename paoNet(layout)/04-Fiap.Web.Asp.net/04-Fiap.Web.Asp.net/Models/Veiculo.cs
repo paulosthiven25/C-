@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -11,7 +12,7 @@ namespace _04_Fiap.Web.Asp.net.Models
     public class Veiculo
     {
         [Key]
-        [Column("cd_veiculo")]
+        [Column("cd_veiculo"),HiddenInput]
         public int Codigo { get; set; }
         [Column("vl_Peso")]
         public float Peso { get; set; }

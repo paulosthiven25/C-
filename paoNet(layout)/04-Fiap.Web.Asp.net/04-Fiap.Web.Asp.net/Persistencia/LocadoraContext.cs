@@ -10,6 +10,8 @@ namespace _04_Fiap.Web.Asp.net.Persistencia
     public class LocadoraContext : DbContext
     {
         public DbSet<Veiculo> Veiculos{ get; set; }
+
+        public DbSet<Proprietario> Proprietarios  { get; set; }
         public LocadoraContext(DbContextOptions opts):base(opts)
         {
 

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar</h1>
+
+@model Veiculo
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+
+<form asp-action="Editar" asp-controller="Veiculo">
+    <input type="hidden" asp-for="Codigo" />
+    <partial name="_Formulario"/>
+    <botao texto="Editar"></botao>
+
+
+</form>

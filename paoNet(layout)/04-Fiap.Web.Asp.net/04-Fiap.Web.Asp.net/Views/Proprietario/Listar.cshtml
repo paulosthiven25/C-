@@ -1,29 +1,26 @@
-﻿@model IList<Veiculo>
+﻿@model IList<Proprietario>
 
 <mensagem msg="@TempData["msg"]"></mensagem>
 
 <h1>Listar</h1>
 
-<a asp-controller="Veiculo" asp-action="Cadastrar" class="btn btn-info">Cadastrar</a>
+<a asp-controller="Proprietario" asp-action="Cadastrar" class="btn btn-info">Cadastrar</a>
 
 <div>
     <table class="table table-bordered table-striped">
         <tr>
-            <th>Peso</th>
-            <th>Modelo</th>
-            <th>DT Fabricacao</th>
-            <th>Combustível</th>
+            <th>Nome</th>
+            <th>É deficiente</th>
+           
         </tr>
         @foreach (var v in Model)
         {
             <tr>
-                <td>@v.Peso</td>
-                <td>@v.Modelo</td>
-                <td>@v.DataFabricacao.ToString("dd/MM/yyyy")</td>
-                <td>@v.TipoCombustivel</td>
+                <td>@v.Nome</td>
+                <td>@(v.Deficiente?"Sim":"Não")</td>
                 <td>
                     <a asp-action="editar" asp-route-id="@v.Codigo">Editar</a>
-                    <button type="button" onclick="idCod.value = @v.Codigo" class="btn btn-outline-danger btn-primary" data-toggle="modal" data-target="#modalExemplo" >
+                    <button type="button" onclick="idCod.value = @v.Codigo" class="btn btn-outline-danger btn-primary" data-toggle="modal" data-target="#modalExemplo">
                         Excluir
                     </button>
                 </td>
@@ -42,10 +39,10 @@
                 </div>
                 <form asp-action="Excluir">
                     <div class="modal-body">
-                        <h4>Deseja mesmo excluir o veiculo ?</h4>
+                        <h4>Deseja mesmo excluir o Proprietario ?</h4>
 
-                        <input type="hidden" id="idCod" name="id"/>
-                        
+                        <input type="hidden" id="idCod" name="id" />
+
 
 
                     </div>
@@ -58,4 +55,3 @@
         </div>
     </div>
 </div>
-

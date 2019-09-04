@@ -41,5 +41,32 @@ namespace _04_Fiap.Web.Asp.net.Controllers
             TempData["msg"] = "O veiculo " + v.Modelo + " foi cadastrado";
             return RedirectToAction("Listar");
         }
+
+        [HttpGet]
+        public IActionResult Editar(int id)
+        {
+            var veiculo = _context.Veiculos.Find(id);
+            return View(veiculo);
+        }
+
+        [HttpPost]
+        public IActionResult Editar(Veiculo v)
+        {
+            _context.Veiculos.Update(v);
+            _context.SaveChanges();
+            TempData["msg"] = "O veiculo " + v.Modelo + " foi atualizado";
+            return RedirectToAction("Listar");
+        }
+
+
+        [HttpPost]
+        public IActionResult Excluir(int id)
+        {
+            var veiculo = _context.Veiculos.Find(id);
+            _context.Veiculos.Remove(veiculo);
+            _context.SaveChanges();
+            TempData["msg"] = "O veiculo"+ veiculo.Modelo+ "foi removido";
+            return RedirectToAction("Listar");
+        }
     }
 }
