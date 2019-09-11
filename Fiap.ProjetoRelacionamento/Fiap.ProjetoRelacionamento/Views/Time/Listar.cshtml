@@ -1,0 +1,28 @@
+﻿@model IList<Time>
+
+<Mensagem msg="@TempData["msg"]"></Mensagem>
+
+
+<a asp-controller="Time" asp-action="Cadastrar" class="btn btn-info">Cadastrar</a>
+
+<div>
+    <table class="table table table-bordered table-striped">
+        <tr>
+            <th>Nome</th>
+            <th>Mascote</th>
+            <th>Esporte</th>
+        </tr>
+
+        @foreach (var time in Model)
+        {
+            <tr>
+                <td>@time.Nome</td>
+                <td>@(time.Mascote?"Sim":"Não")</td>
+                <td>@time.Esporte</td>
+                
+            </tr>
+        }
+    </table>
+</div>
+
+
