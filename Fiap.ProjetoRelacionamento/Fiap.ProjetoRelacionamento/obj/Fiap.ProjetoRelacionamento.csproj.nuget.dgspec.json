@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\logonrmlocal\\Desktop\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento.csproj": {}
+    "C:\\Users\\logonrmlocal\\Desktop\\C-\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento.csproj": {}
   },
   "projects": {
-    "C:\\Users\\logonrmlocal\\Desktop\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento.csproj": {
+    "C:\\Users\\logonrmlocal\\Desktop\\C-\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\logonrmlocal\\Desktop\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento.csproj",
+        "projectUniqueName": "C:\\Users\\logonrmlocal\\Desktop\\C-\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento.csproj",
         "projectName": "Fiap.ProjetoRelacionamento",
-        "projectPath": "C:\\Users\\logonrmlocal\\Desktop\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento.csproj",
+        "projectPath": "C:\\Users\\logonrmlocal\\Desktop\\C-\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento.csproj",
         "packagesPath": "C:\\Users\\logonrmlocal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\logonrmlocal\\Desktop\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\obj\\",
+        "outputPath": "C:\\Users\\logonrmlocal\\Desktop\\C-\\Fiap.ProjetoRelacionamento\\Fiap.ProjetoRelacionamento\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

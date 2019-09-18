@@ -4,6 +4,15 @@
 
 
 <a asp-controller="Time" asp-action="Cadastrar" class="btn btn-info">Cadastrar</a>
+<form asp-controller="Time" asp-action="pesquisar" method="get">
+    <div class="form-group">
+        <select name="esporte" class="form-control" asp-items="@Html.GetEnumSelectList<Esporte>()">
+            <option>Selecione</option>
+        </select>
+        <input type="submit" value="Buscar" class="btn btn-success ml-2"/>
+    </div>    
+
+</form>
 
 <div>
     <table class="table table table-bordered table-striped">
@@ -11,6 +20,8 @@
             <th>Nome</th>
             <th>Mascote</th>
             <th>Esporte</th>
+            <th>Nome do Treinador</th>
+            <th>Salário do Treinador</th>
         </tr>
 
         @foreach (var time in Model)
@@ -19,7 +30,8 @@
                 <td>@time.Nome</td>
                 <td>@(time.Mascote?"Sim":"Não")</td>
                 <td>@time.Esporte</td>
-                
+                <td>@time.Tecnico.Nome</td>
+                 <td>@time.Tecnico.Salario</td>
             </tr>
         }
     </table>

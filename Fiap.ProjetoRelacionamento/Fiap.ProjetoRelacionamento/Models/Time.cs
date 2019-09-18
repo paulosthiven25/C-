@@ -15,5 +15,14 @@ namespace Fiap.ProjetoRelacionamento.Models
 
         public bool Mascote { get; set; }
         public Esporte Esporte { get; set; }
+
+        //relacionamento
+
+        public Treinador Tecnico { get; set; }
+        public int TreinadorId { get; set; }
+
+        public IList<Jogador> Jogadores { get; set; }
+
+        public IList<CampeonatoTime> CampeonatoTime { get; set; }
     }
 }

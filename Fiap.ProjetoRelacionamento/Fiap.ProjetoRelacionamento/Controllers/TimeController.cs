@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Fiap.ProjetoRelacionamento.Models;
 using Fiap.ProjetoRelacionamento.Persistencia;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Fiap.ProjetoRelacionamento.Controllers
 {
@@ -25,10 +26,15 @@ namespace Fiap.ProjetoRelacionamento.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Cadastrar(Time t)
+        public IActionResult Cadastrar(Time t,Treinador treinador)
         {
+            
+            
+            
             _context.Times.Add(t);
             _context.SaveChanges();
+
+
             TempData["msg"] = "O time " + t.Nome + " foi cadastrado";
             return RedirectToAction("Listar");
           
@@ -37,8 +43,17 @@ namespace Fiap.ProjetoRelacionamento.Controllers
         public IActionResult Listar()
         {
 
-            return View(_context.Times.ToList());
+            return View(_context.Times.Include(c => c.Tecnico).ToList());
         }
+
+        [HttpGet]
+        public IActionResult Pesquisar(Esporte? esporte)
+        {
+            var lista = _context.Times.Where(e => e.Esporte == esporte || esporte == null).Include(c => c.Tecnico).ToList();
+            return View("Listar", lista);
+        }
+
+        
 
 
     }
