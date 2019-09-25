@@ -1,0 +1,33 @@
+﻿@model Time
+
+
+<div class="form-group">
+
+    <h5>Time: @Model.Nome</h5>
+    <h5>Técnico: @Model.Tecnico.Nome</h5>
+    <h5>Salario: @Model.Tecnico.Salario</h5>
+    <h5>Jogadores:@Model.Jogadores.Count()</h5>
+</div>
+<hr/>
+<div class="row">
+    @foreach (var item in Model.Jogadores)
+    {
+        <div class="card col-md-4">
+
+            <div class="card-body">
+                <h5 class="card-title">@item.Nome</h5>
+                <p class="card-text">Data de Nacimento: @item.DataNascimento.ToShortDateString()</p>
+                <p class="card-text">Altura: @item.Altura</p>
+                <a asp class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    }
+    <div class="card col-md-4">
+
+        <div class="card-body">
+            <h5 class="card-title">Nome jogador</h5>
+            
+            <a asp-action="Cadastrar" asp-controller="jogador" asp-route-id="@Model.Codigo" class="btn btn-primary">Criar Jogador</a>
+        </div>
+    </div>
+</div>

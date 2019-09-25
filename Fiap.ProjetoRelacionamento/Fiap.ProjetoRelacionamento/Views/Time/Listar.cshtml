@@ -32,6 +32,7 @@
                 <td>@time.Esporte</td>
                 <td>@time.Tecnico.Nome</td>
                  <td>@time.Tecnico.Salario</td>
+                <td><a asp-action="VerDetalhes" asp-route-id="@time.Codigo" class="btn btn-danger">Ver Detalhes</a></td>
             </tr>
         }
     </table>

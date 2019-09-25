@@ -1,0 +1,38 @@
+﻿@model IList<Jogador>
+
+<Mensagem msg="@TempData["msg"]"></Mensagem>
+
+
+<a asp-controller="Time" asp-action="Cadastrar" class="btn btn-info">Cadastrar</a>
+<form asp-controller="jogador" asp-action="listar" method="get">
+    <div class="form-group">
+        <select class="form-control" asp-items="@ViewBag.times" name="timeBusca">
+            <option>Selecione</option>
+        </select>
+        <input type="submit" value="Buscar" class="btn btn-success ml-2" />
+    </div>
+
+</form>
+
+<div>
+    <table class="table table table-bordered table-striped">
+        <tr>
+            <th>Nome</th>
+            <th>DataNascimento</th>
+            <th>Altura</th>
+            <th>Time</th>
+           
+        </tr>
+
+        @foreach (var jogador in Model)
+        {
+            <tr>
+                <td>@jogador.Nome</td>
+                <td>@(jogador.DataNascimento)</td>
+                <td>@jogador.Altura</td>
+                <td>@jogador.Time.Nome</td>
+            </tr>
+        }
+    </table>
+</div>
+

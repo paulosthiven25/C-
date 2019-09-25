@@ -65,3 +65,5 @@ C:\Users\logonrmlocal\Desktop\C-\Fiap.ProjetoRelacionamento\Fiap.ProjetoRelacion
 C:\Users\logonrmlocal\Desktop\C-\Fiap.ProjetoRelacionamento\Fiap.ProjetoRelacionamento\obj\Debug\netcoreapp2.2\Fiap.ProjetoRelacionamento.pdb
 C:\Users\logonrmlocal\Desktop\C-\Fiap.ProjetoRelacionamento\Fiap.ProjetoRelacionamento\obj\Debug\netcoreapp2.2\Fiap.ProjetoRelacionamento.csproj.CopyComplete
 C:\Users\logonrmlocal\Desktop\C-\Fiap.ProjetoRelacionamento\Fiap.ProjetoRelacionamento\obj\Debug\netcoreapp2.2\Razor\Views\Jogador\Cadastrar.g.cshtml.cs
+C:\Users\logonrmlocal\Desktop\C-\Fiap.ProjetoRelacionamento\Fiap.ProjetoRelacionamento\obj\Debug\netcoreapp2.2\Razor\Views\Jogador\Listar.g.cshtml.cs
+C:\Users\logonrmlocal\Desktop\C-\Fiap.ProjetoRelacionamento\Fiap.ProjetoRelacionamento\obj\Debug\netcoreapp2.2\Razor\Views\Time\VerDetalhes.g.cshtml.cs

@@ -53,7 +53,13 @@ namespace Fiap.ProjetoRelacionamento.Controllers
             return View("Listar", lista);
         }
 
-        
+        [HttpGet]
+        public IActionResult VerDetalhes(int id)
+        {
+            var time = _context.Times.Include(c => c.Tecnico).Include(c => c.Jogadores).Where(c => c.Codigo == id).FirstOrDefault();
+            return View(time);
+            
+        }
 
 
     }
