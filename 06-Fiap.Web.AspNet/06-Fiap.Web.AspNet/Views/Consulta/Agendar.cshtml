@@ -1,0 +1,56 @@
+﻿@model AgendamentoViewModel
+
+@{
+    ViewData["Title"] = "Agendar consulta";
+}
+@* @if (TempData["msg"] != null)
+    {
+        <div class="alert alert-success">@TempData["msg"]</div>
+    }*@
+<Mensagem msg="@TempData["msg"]"></Mensagem>
+<h1>Agendamento de consultas</h1>
+
+<table class="table table-striped">
+    <tr>
+        <th>Nome</th>
+        <th>Crm</th>
+        <th>Especialidade</th>
+        <th>Totaql de consultas</th>
+    </tr>
+    
+        <tr>
+            <td>@Model.Medico.Nome</td>
+            <td>@Model.Medico.Crm</td>
+            <td>@Model.Medico.Especialidade</td>
+            <td>@Model.NumeroConsultas</td>
+        </tr>
+    
+</table>
+<h2>Dr. @Model.Medico.Nome</h2>
+<form asp-action="Cadastrar">
+    <input hidden asp-for="Consulta.ConsultaId"/>
+    <div class="form-group">
+        <label asp-for="Consulta.Paciente"></label>
+        <input asp-for="Consulta.Paciente" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Consulta.Data"></label>
+        <input asp-for="Consulta.Data" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Consulta.Convenio"></label>
+        <input asp-for="Consulta.Convenio"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Consulta.Confirmado"></label>
+        <input asp-for="Consulta.Confirmado"/>
+    </div>
+
+
+
+    <input type="submit" value="Cadastrar" class="btn btn-primary" />
+</form>
+
