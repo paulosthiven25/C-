@@ -1,0 +1,32 @@
+﻿@model  IList<Medico>
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<h1>Médicos</h1>
+
+<table class="table">
+    <tr>
+        <th>CRM</th>
+        <th>Nome</th>
+        <th>Especialidade</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Crm</td>
+            <td>@item.Nome</td>
+            <td>@item.Especialidade</td>
+            <td>
+                <a class="btn btn-outline-success btn-sm"
+                   asp-action="cadastrar" asp-controller="consulta"
+                   asp-route-medico="@item.MedicoId">
+                    Agendar Consulta
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+
+
